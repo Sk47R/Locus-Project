@@ -1,0 +1,113 @@
+.signin {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form-control {
+  font-size: 1.4rem;
+}
+
+.signinbox {
+  border: 1px solid lightgrey;
+  width: 40rem;
+  padding: 2rem;
+  border-radius: 5px;
+}
+.header > h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+}
+.signin__input {
+  margin-bottom: 1.5rem;
+}
+
+.signin__input__password::placeholder,
+.signin__input__email::placeholder {
+  color: lightgrey;
+}
+.signin__forgot {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 1.2rem 0;
+}
+.signin__forgot__text {
+  font-size: 1.4rem;
+  color: #32569f;
+  text-decoration: none;
+}
+.signin__forgot__text:hover {
+  text-decoration: none;
+}
+.signin__button-btn {
+  width: 100%;
+  font-size: 1.6rem;
+  padding: 0.4rem 0;
+  border: none;
+  background-color: #32569f;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.signin__below {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+}
+.signin__below > a {
+  text-decoration: none;
+}
+
+.signin__input__name {
+  display: flex;
+  /* border: 2px solid red; */
+}
+.signin__input__name input {
+  width: 98%;
+  height: 3.5rem;
+  padding: 0 1rem;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+}
+.signin__input__name input::placeholder {
+  color: lightgrey;
+}
+#lastname {
+  margin-left: 0.5rem;
+}
+.signin__input__AgeSex {
+  display: flex;
+  /* border: 2px solid red; */
+}
+.signin__input__AgeSex__age input,
+.signin__input__AgeSex__sex input,
+.signin__input__AgeSex__weight input {
+  width: 35%;
+  font-size: 1.3rem;
+  padding: 0rem 1rem;
+  margin-left: 1rem;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  height: 3.5rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.inputfield {
+  display: block;
+  width: 100%;
+  height: 3.5rem;
+  font-size: 1.3rem;
+  padding: 0 1rem;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+}

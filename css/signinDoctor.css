@@ -1,0 +1,66 @@
+.signin {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.signinbox {
+  border: 1px solid lightgrey;
+  width: 40rem;
+  padding: 2rem;
+  border-radius: 5px;
+}
+.header > h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+}
+.signin__input {
+  margin-bottom: 1.5rem;
+}
+.signin__input__password,
+.signin__input__email {
+  width: 100%;
+  height: 3.5rem;
+  border: 1px solid lightgrey;
+  padding: 0rem 1rem;
+  font-size: 1.4rem;
+  border-radius: 5px;
+}
+.signin__input__password::placeholder,
+.signin__input__email::placeholder {
+  color: lightgrey;
+}
+.signin__forgot {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 1.2rem 0;
+}
+.signin__forgot__text {
+  font-size: 1.4rem;
+  color: #32569f;
+  text-decoration: none;
+}
+.signin__forgot__text:hover {
+  text-decoration: none;
+}
+.signin__button-btn {
+  width: 100%;
+  font-size: 1.6rem;
+  padding: 0.4rem 0;
+  border: none;
+  background-color: #32569f;
+  color: #fff;
+  cursor: pointer;
+}
+.signin__below {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+}
+.signin__below > a {
+  text-decoration: none;
+}
