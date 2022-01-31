@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Front</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/e5640549ae.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/hospitalDetail.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Poppins", sans-serif;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 62.5%;
+        background-color: #f2f4f7;
+      }
+      body {
+        background-color: #f2f4f7;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- nav -->
+    <nav class="navbarCustom">
+      <div class="navbarCustom__left">
+        <div class="navbarCustom__left__name">
+          <a href="./front.html">Sajilo Hospital</a>
+        </div>
+        <div class="navbarCustom__left__hospitals">
+          <a href="./allhospital.html">Hospitals</a>
+        </div>
+        <div class="navbarCustom__left__medicine">
+          <a href="./medicines.html">Medicines</a>
+        </div>
+      </div>
+      <div class="navbarCustom__right">
+        <div class="navbarCustom__right__log" id="register">Register</div>
+        <div class="navbarCustom__right__log" id="login">
+          <i class="fas fa-sign-in-alt navbarCustom__right__log-logo"></i>LogIn
+        </div>
+        <a href="./getToken.html" class="navbarCustom__right__token"
+          >Get Token</a
+        >
+      </div>
+    </nav>
+    <div class="hidden-content hide" id="hide">
+      <a href="./doctorLogin.html" class="doctor">Doctor</a>
+      <a href="./patientLogin.html" class="patient">Patient</a>
+    </div>
+    <div class="hidden-content-register hide-register" id="hide-register">
+      <a href="./doctorRegister.html" class="doctor">Doctor</a>
+      <a href="./patientRegister.html" class="patient">Patient</a>
+    </div>
+
+    <!-- nav -->
+
+    <!-- Section Hospital Detail -->
+    <section class="hospitalDetail">
+      <div class="hospitalDetail__div">
+        <div class="hospitalDetail__div__left">
+          <div class="hospitalDetail__div__left__details">
+            <div class="hospitalDetail__div__left__header">
+              <p>Hospital Details</p>
+            </div>
+            <div class="hospitalDetail__div__left__details">
+              <div class="hospitalDetail__div__left__info">
+                Name: <span class="margin-right">Bir Hospital</span>
+              </div>
+              <div class="hospitalDetail__div__left__info">
+                Address: <span class="margin-right">Kanti Path, Kathmandu</span>
+              </div>
+              <div class="hospitalDetail__div__left__info">
+                Opening Time: <span>10AM - 5PM</span>
+              </div>
+              <div class="hospitalDetail__div__left__info">
+                Speciality:
+                <span class="margin__right">General</span>
+              </div>
+              <div class="hospitalDetail__div__left__info">
+                Total Doctors: <span class="margin__right">100</span>
+              </div>
+              <div class="hospitalDetail__div__left__info">
+                Bed Capacity: <span class="margin__right">100</span>
+              </div>
+              <div class="hospitalDetail__div__left__info">
+                Bed Available: <span class="margin__right">70</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hospitalDetail__div__right">
+          <img
+            src="./assets/birhospital.jpeg"
+            alt="Hospital Image"
+            class="hospitalDetail__div__right__image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Hospital detail -->
+
+    <!-- section department -->
+    <section class="departments">
+      <div class="departments-div">
+        <header class="departments__header">Departments</header>
+        <div id="list" class="user-cards">
+          <a href="#" class="card">
+            <div class="card-left">
+              <div class="Dept__Name">
+                Name: <span class="dept__name">Surgery</span>
+              </div>
+              <div class="Dept__Description">
+                <h4 class="Dept__Description__Header">Description:</h4>
+                <p class="Dept__Description__Content">
+                  The surgery department is the oldest department of the
+                  country. It has different units as General surgery, Gastro and
+                  hepatobiliary surgery unit, Burn and Plastic surgery Unit,
+                  Urosurgery, Cardiothoracic, Neurosurgery.
+                </p>
+              </div>
+            </div>
+            <div class="card-right">
+              <div class="card-right-image-div">
+                <img
+                  src="./assets/surgery.jpeg"
+                  class="card-right-image"
+                  alt="Hospital Image"
+                />
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card">
+            <div class="card-left">
+              <div class="Dept__Name">
+                Name: <span class="dept__name">Surgery</span>
+              </div>
+              <div class="Dept__Description">
+                <h4 class="Dept__Description__Header">Description:</h4>
+                <p class="Dept__Description__Content">
+                  The surgery department is the oldest department of the
+                  country. It has different units as General surgery, Gastro and
+                  hepatobiliary surgery unit, Burn and Plastic surgery Unit,
+                  Urosurgery, Cardiothoracic, Neurosurgery.
+                </p>
+              </div>
+            </div>
+            <div class="card-right">
+              <div class="card-right-image-div">
+                <img
+                  src="./assets/surgery.jpeg"
+                  class="card-right-image"
+                  alt="Hospital Image"
+                />
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card">
+            <div class="card-left">
+              <div class="Dept__Name">
+                Name: <span class="dept__name">Surgery</span>
+              </div>
+              <div class="Dept__Description">
+                <h4 class="Dept__Description__Header">Description:</h4>
+                <p class="Dept__Description__Content">
+                  The surgery department is the oldest department of the
+                  country. It has different units as General surgery, Gastro and
+                  hepatobiliary surgery unit, Burn and Plastic surgery Unit,
+                  Urosurgery, Cardiothoracic, Neurosurgery.
+                </p>
+              </div>
+            </div>
+            <div class="card-right">
+              <div class="card-right-image-div">
+                <img
+                  src="./assets/surgery.jpeg"
+                  class="card-right-image"
+                  alt="Hospital Image"
+                />
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card">
+            <div class="card-left">
+              <div class="Dept__Name">
+                Name: <span class="dept__name">Surgery</span>
+              </div>
+              <div class="Dept__Description">
+                <h4 class="Dept__Description__Header">Description:</h4>
+                <p class="Dept__Description__Content">
+                  The surgery department is the oldest department of the
+                  country. It has different units as General surgery, Gastro and
+                  hepatobiliary surgery unit, Burn and Plastic surgery Unit,
+                  Urosurgery, Cardiothoracic, Neurosurgery.
+                </p>
+              </div>
+            </div>
+            <div class="card-right">
+              <div class="card-right-image-div">
+                <img
+                  src="./assets/surgery.jpeg"
+                  class="card-right-image"
+                  alt="Hospital Image"
+                />
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card">
+            <div class="card-left">
+              <div class="Dept__Name">
+                Name: <span class="dept__name">Surgery</span>
+              </div>
+              <div class="Dept__Description">
+                <h4 class="Dept__Description__Header">Description:</h4>
+                <p class="Dept__Description__Content">
+                  The surgery department is the oldest department of the
+                  country. It has different units as General surgery, Gastro and
+                  hepatobiliary surgery unit, Burn and Plastic surgery Unit,
+                  Urosurgery, Cardiothoracic, Neurosurgery.
+                </p>
+              </div>
+            </div>
+            <div class="card-right">
+              <div class="card-right-image-div">
+                <img
+                  src="./assets/surgery.jpeg"
+                  class="card-right-image"
+                  alt="Hospital Image"
+                />
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card">
+            <div class="card-left">
+              <div class="Dept__Name">
+                Name: <span class="dept__name">Surgery</span>
+              </div>
+              <div class="Dept__Description">
+                <h4 class="Dept__Description__Header">Description:</h4>
+                <p class="Dept__Description__Content">
+                  The surgery department is the oldest department of the
+                  country. It has different units as General surgery, Gastro and
+                  hepatobiliary surgery unit, Burn and Plastic surgery Unit,
+                  Urosurgery, Cardiothoracic, Neurosurgery.
+                </p>
+              </div>
+            </div>
+            <div class="card-right">
+              <div class="card-right-image-div">
+                <img
+                  src="./assets/surgery.jpeg"
+                  class="card-right-image"
+                  alt="Hospital Image"
+                />
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- section department -->
+
+    <!-- section Doctors -->
+    <section class="doctor-section">
+      <div class="doctor-div">
+        <header class="doctor__header">Doctors</header>
+        <div id="list" class="user-cards">
+          <a href="#" class="card">
+            <div class="doctor-card-left">
+              <div class="Doctor__Name">
+                Name: <span class="dept__name">Dr. Sudin Sakya</span>
+              </div>
+              <div class="Dept__Name">
+                Department: <span class="dept__name">Dental Sepcialist</span>
+              </div>
+              <div class="Dept__Name">
+                Status: <span class="dept__name">Available</span>
+              </div>
+            </div>
+            <div class="card-right">
+              <div class="card-right-image-div">
+                <img
+                  src="./assets/person.jpeg"
+                  class="card-right-image"
+                  alt="Hospital Image"
+                />
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card">
+            <div class="doctor-card-left">
+              <div class="Dept__Name">
+                Name: <span class="dept__name">Dr. Sudin Sakya</span>
+              </div>
+              <div class="Dept__Name">
+                Department: <span class="dept__name">Dental Sepcialist</span>
+              </div>
+              <div class="Dept__Name">
+                Status: <span class="dept__name">Available</span>
+              </div>
+            </div>
+            <div class="card-right">
+              <div class="card-right-image-div">
+                <img
+                  src="./assets/person.jpeg"
+                  class="card-right-image"
+                  alt="Hospital Image"
+                />
+              </div>
+            </div> </a
+          ><a href="#" class="card">
+            <div class="doctor-card-left">
+              <div class="Dept__Name">
+                Name: <span class="dept__name">Dr. Sudin Sakya</span>
+              </div>
+              <div class="Dept__Name">
+                Department: <span class="dept__name">Dental Sepcialist</span>
+              </div>
+              <div class="Dept__Name">
+                Status: <span class="dept__name">Available</span>
+              </div>
+            </div>
+            <div class="card-right">
+              <div class="card-right-image-div">
+                <img
+                  src="./assets/person.jpeg"
+                  class="card-right-image"
+                  alt="Hospital Image"
+                />
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Doctor -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__condition footer-content">
+        <a href="#">Condition of Use</a>
+      </div>
+      <div class="footer__privacy footer-content">
+        <a href="#">Privacy Notice</a>
+      </div>
+      <div class="footer__reserved footer-content">
+        <a href="#">All rights reserved &copy; 2022, Sajilo Hospital</a>
+      </div>
+    </footer>
+
+    <!-- Footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./js/hospitalDetail.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

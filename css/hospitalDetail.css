@@ -108,7 +108,25 @@ body {
   color: #fff;
   text-decoration: none;
 }
+.hidden-content-register {
+  background-color: #32569f;
+  color: #fff;
+  position: absolute;
+  top: 7.8rem;
+  right: 23rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+.hidden-content-register a {
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+}
 .hide {
+  opacity: 0;
+}
+.hide-register {
   opacity: 0;
 }
 
@@ -116,25 +134,23 @@ body {
 
 /* profile */
 
-.profile {
+.hospitalDetail {
   background-color: #f2f4f7;
   margin-top: 2rem;
 }
-.profile__div {
+.hospitalDetail__div {
   background-color: white;
   border: 2px solid lighgrey;
   width: 80%;
   margin: auto;
   display: flex;
 }
-.profile__div__left {
+.hospitalDetail__div__left {
   flex: 1;
   /* border: 2px solid red; */
 }
-.profile__div__left__details {
-  /* background-color: red; */
-}
-.profile__div__left__header {
+
+.hospitalDetail__div__left__header {
   font-size: 3rem;
   display: flex;
   justify-content: center;
@@ -145,91 +161,146 @@ body {
 .margin__right {
   margin-left: 0.1rem;
 }
-.profile__div__left__details {
+.hospitalDetail__div__left__details {
   margin: 2rem;
   font-size: 2rem;
 }
-.profile__div__left__info {
+.hospitalDetail__div__left__info {
   /* border: 2px solid red; */
   width: 80%;
   margin-bottom: 2rem;
 }
-.profile__div__left__info__name,
-.profile__div__left__info__ageSex {
+.hospitalDetail__div__left__info__name,
+.hospitalDetail__div__left__info__ageSex {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.profile__div__left__name__last,
-.profile__div__left__sex {
+.hospitalDetail__div__left__name__last,
+.hospitalDetail__div__left__sex {
   width: 19.5rem;
 }
 
-.profile__div__right {
-  flex: 0.5;
+.hospitalDetail__div__right {
+  flex: 1;
   display: flex;
   align-items: center;
 }
-.profile__div__right__image {
-  height: 30rem;
-  width: 30rem;
+.hospitalDetail__div__right__image {
+  margin-top: 6rem;
+  width: 86%;
   border: 4px solid lightgrey;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   object-fit: cover;
 }
 /* profile */
 
-/* Medical Section */
-
-.checkup__section {
+/* hospital section */
+.departments,
+.doctor-section {
+  margin-top: 4rem;
+  /* background-color: white; */
 }
-.checkup {
+.departments-div {
   width: 80%;
-  background-color: white;
   margin: auto;
-  margin-top: 3rem;
-  padding: 2rem;
-  height: 98rem;
+  background-color: white;
+  padding: 1rem 2rem;
+  height: 90rem;
   overflow-y: scroll;
 }
-.checkup::-webkit-scrollbar {
+.doctor-div {
+  width: 80%;
+  margin: auto;
+  background-color: white;
+  padding: 1rem 2rem;
+  height: 45rem;
+  overflow-y: scroll;
+}
+.departments-div::-webkit-scrollbar,
+.doctor-div::-webkit-scrollbar {
   width: 0; /* Remove scrollbar space */
   /* Optional: just make scrollbar invisible */
 }
-.checkup-header {
-  font-size: 3rem;
-  border-bottom: 1px solid lightgrey;
+.departments__header,
+.doctor__header {
+  border-bottom: 1px solid rgb(222, 222, 222);
+  margin-bottom: 4rem;
 }
-.medicalReport {
-  border: 2px solid lightgrey;
-  margin-top: 1rem;
-  /* border-radius: 5px; */
-  padding: 1rem;
-  font-size: 2rem;
-  margin-bottom: 2rem;
+
+.user-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  column-gap: 2rem;
+  row-gap: 2rem;
 }
-.medicalReport__date__name {
-  /* border: 2px solid red; */
+.user-cards > a {
+  text-decoration: none;
+  color: #3b4351;
+}
+.user-cards > a:hover {
+  color: rgb(114, 113, 113);
+}
+.card {
+  padding: 0.5rem;
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 0.6rem;
+  flex-direction: column-reverse;
+  /* justify-content: space-between; */
+  align-items: center;
+  border: 2px solid #f2f4f7;
+  /* padding: 1rem; */
+  transition: all 0.4s ease;
 }
-.medicalReport__detail {
-  margin-bottom: 0.6rem;
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.medicalReport__detail__prescription {
-  font-size: 2rem;
+.card-left {
+  flex: 1;
+  font-size: 18px;
+  margin: 2rem 0;
+  padding: 0rem 1rem;
+}
+.doctor-card-left {
+  flex: 1;
+  font-size: 18px;
+  margin: 2rem 0;
+  padding: 0rem 1rem;
+  width: 100%;
+}
+.card-right {
+  flex: 1;
+  font-size: 20px;
+}
+.departments__header,
+.doctor__header {
+  font-size: 3.3rem;
+  margin-bottom: 1rem;
   font-weight: 600;
+}
+
+.dept__name {
+  font-size: 1.7rem;
+}
+.Dept__Name {
   margin-bottom: 1rem;
 }
-.medicalPrescription {
-  padding: 0.5rem 1rem;
-  width: 100%;
-  font-size: 1.6rem;
-  color: #4e4e4e;
-  overflow-y: scroll;
+.Doctor__Name {
+  margin-bottom: 1rem;
 }
-/* Medical Section */
+.Dept__Description__Header {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.Dept__Description__Content {
+  padding-left: 1.5rem;
+  font-size: 1.6rem;
+}
+
+.card-right-image {
+  width: 100%;
+  /* height: 20rem; */
+}
+/* hospital section */
 
 /* footer */
 .footer {
