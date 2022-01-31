@@ -107,7 +107,25 @@ body {
   color: #fff;
   text-decoration: none;
 }
+.hidden-content-register {
+  background-color: #32569f;
+  color: #fff;
+  position: absolute;
+  top: 7.8rem;
+  right: 23rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+.hidden-content-register a {
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+}
 .hide {
+  opacity: 0;
+}
+.hide-register {
   opacity: 0;
 }
 

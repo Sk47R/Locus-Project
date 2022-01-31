@@ -50,8 +50,8 @@
     </style>
   <body>
 
-     <!-- nav -->
-     <nav class="navbarCustom">
+       <!-- nav -->
+    <nav class="navbarCustom">
       <div class="navbarCustom__left">
         <div class="navbarCustom__left__name">
           <a href="./front.html">Sajilo Hospital</a>
@@ -64,6 +64,7 @@
         </div>
       </div>
       <div class="navbarCustom__right">
+        <div class="navbarCustom__right__log" id="register">Register</div>
         <div class="navbarCustom__right__log" id="login">
           <i class="fas fa-sign-in-alt navbarCustom__right__log-logo"></i>LogIn
         </div>
@@ -73,8 +74,12 @@
       </div>
     </nav>
     <div class="hidden-content hide" id="hide">
-      <a href="./doctorProfile.html" class="doctor">Doctor</a>
-      <a href="./patientProfile.html" class="patient">Patient</a>
+      <a href="./doctorLogin.html" class="doctor">Doctor</a>
+      <a href="./patientLogin.html" class="patient">Patient</a>
+    </div>
+    <div class="hidden-content-register hide-register" id="hide-register">
+      <a href="./doctorRegister.html" class="doctor">Doctor</a>
+      <a href="./patientRegister.html" class="patient">Patient</a>
     </div>
 
     <!-- nav -->
@@ -277,6 +282,6 @@
     <!-- Footer -->
 
 
-    <script src="./medicines.js"></script>
+    <script src="./js/medicines.js"></script>
   </body>
 </html>

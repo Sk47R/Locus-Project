@@ -49,34 +49,39 @@
       }
     </style>
   <body>
-      <!-- nav -->
-      <nav class="navbarCustom">
-        <div class="navbarCustom__left">
-          <div class="navbarCustom__left__name">
-            <a href="./front.html">Sajilo Hospital</a>
-          </div>
-          <div class="navbarCustom__left__hospitals">
-            <a href="./allhospital.html">Hospitals</a>
-          </div>
-          <div class="navbarCustom__left__medicine">
-            <a href="./medicines.html">Medicines</a>
-          </div>
+       <!-- nav -->
+    <nav class="navbarCustom">
+      <div class="navbarCustom__left">
+        <div class="navbarCustom__left__name">
+          <a href="./front.html">Sajilo Hospital</a>
         </div>
-        <div class="navbarCustom__right">
-          <div class="navbarCustom__right__log" id="login">
-            <i class="fas fa-sign-in-alt navbarCustom__right__log-logo"></i>LogIn
-          </div>
-          <a href="./getToken.html" class="navbarCustom__right__token"
-            >Get Token</a
-          >
+        <div class="navbarCustom__left__hospitals">
+          <a href="./allhospital.html">Hospitals</a>
         </div>
-      </nav>
-      <div class="hidden-content hide" id="hide">
-        <a href="./doctorProfile.html" class="doctor">Doctor</a>
-        <a href="./patientProfile.html" class="patient">Patient</a>
+        <div class="navbarCustom__left__medicine">
+          <a href="./medicines.html">Medicines</a>
+        </div>
       </div>
-  
-      <!-- nav -->
+      <div class="navbarCustom__right">
+        <div class="navbarCustom__right__log" id="register">Register</div>
+        <div class="navbarCustom__right__log" id="login">
+          <i class="fas fa-sign-in-alt navbarCustom__right__log-logo"></i>LogIn
+        </div>
+        <a href="./getToken.html" class="navbarCustom__right__token"
+          >Get Token</a
+        >
+      </div>
+    </nav>
+    <div class="hidden-content hide" id="hide">
+      <a href="./doctorLogin.html" class="doctor">Doctor</a>
+      <a href="./patientLogin.html" class="patient">Patient</a>
+    </div>
+    <div class="hidden-content-register hide-register" id="hide-register">
+      <a href="./doctorRegister.html" class="doctor">Doctor</a>
+      <a href="./patientRegister.html" class="patient">Patient</a>
+    </div>
+
+    <!-- nav -->
 
     <!-- hospital section -->
     <section class="hospitals">
@@ -256,6 +261,6 @@
     <!-- hospital section -->
 
     <!-- Footer -->
-    <script src="./allhospital.js"></script>
+    <script src="./js/allhospital.js"></script>
   </body>
 </html>
