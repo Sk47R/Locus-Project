@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Front</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/e5640549ae.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/patientProfile.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Poppins", sans-serif;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 62.5%;
+        background-color: #f2f4f7;
+      }
+      body {
+        background-color: #f2f4f7;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- nav -->
+    <nav class="navbarCustom">
+      <div class="navbarCustom__left">
+        <div class="navbarCustom__left__name">
+          <a href="./front.html">Sajilo Hospital</a>
+        </div>
+        <div class="navbarCustom__left__hospitals">
+          <a href="./allhospital.html">Hospitals</a>
+        </div>
+        <div class="navbarCustom__left__medicine">
+          <a href="./medicines.html">Medicines</a>
+        </div>
+      </div>
+      <div class="navbarCustom__right">
+        <div class="navbarCustom__right__log" id="login">
+          <i class="fas fa-sign-in-alt navbarCustom__right__log-logo"></i>LogIn
+        </div>
+        <a href="./getToken.html" class="navbarCustom__right__token"
+          >Get Token</a
+        >
+      </div>
+    </nav>
+    <div class="hidden-content hide" id="hide">
+      <a href="./doctorProfile.html" class="doctor">Doctor</a>
+      <a href="./patientProfile.html" class="patient">Patient</a>
+    </div>
+
+    <!-- nav -->
+
+    <!-- Section Profile -->
+    <section class="profile">
+      <div class="profile__div">
+        <div class="profile__div__left">
+          <div class="profile__div__left__details">
+            <div class="profile__div__left__header">
+              <p>Personal Details</p>
+            </div>
+            <div class="profile__div__left__details">
+              <div class="profile__div__left__info">
+                <div class="profile__div__left__name__first">
+                  FirstName: <span>Williams</span>
+                </div>
+                <div class="profile__div__left__name__last">
+                  LastName: <span>Bernate</span>
+                </div>
+              </div>
+              <div class="profile__div__left_agesex">
+                <div class="profile__div__left__info">Age: <span>19</span></div>
+                <div class="profile__div__left__info">
+                  Sex: <span>Male</span>
+                </div>
+              </div>
+              <div class="profile__div__left__info">
+                Weight: <span>67.9</span>Kg
+              </div>
+              <div class="profile__div__left__info">
+                Phone Number : <span>+977-9863485403</span>
+              </div>
+              <div class="profile__div__left__info">
+                Address: <span>Mangalbazzar, Patan</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="profile__div__right">
+          <img
+            src="./assets/person.jpeg"
+            alt="Patient Image"
+            class="profile__div__right__image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Profile -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__condition footer-content">
+        <a href="#">Condition of Use</a>
+      </div>
+      <div class="footer__privacy footer-content">
+        <a href="#">Privacy Notice</a>
+      </div>
+      <div class="footer__reserved footer-content">
+        <a href="#">All rights reserved &copy; 2022, Sajilo Hospital</a>
+      </div>
+    </footer>
+
+    <!-- Footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./front.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+
+body {
+  position: relative;
+}
+
+.doctor {
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+}
+.patient {
+  padding: 1rem 2rem;
+}
+.doctor:hover,
+.patient:hover {
+  box-shadow: inset 0 0 20px 20px rgba(0, 0, 0, 0.25);
+}
+.navbarCustom {
+  background-color: #32569f;
+  border-radius: 0;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 3rem;
+  height: 8rem;
+}
+
+.navbarCustom__left {
+  display: flex;
+  align-items: center;
+}
+
+.navbarCustom__left__name > a {
+  font-size: 3rem;
+  margin-right: 2rem;
+  font-family: "Dancing Script", cursive;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.navbarCustom__left__name > a:hover,
+.navbarCustom__left__hospitals > a:hover,
+.navbarCustom__left__medicine > a:hover,
+.navbarCustom__right__token:hover,
+.navbarCustom__right__log:hover {
+  filter: brightness(80%);
+}
+
+.navbarCustom__left__hospitals > a {
+  font-size: 2rem;
+  margin-right: 2rem;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.navbarCustom__left__medicine > a {
+  font-size: 2rem;
+  margin-right: 2rem;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.navbarCustom__right {
+  display: flex;
+  align-items: center;
+}
+.navbarCustom__right__log {
+  font-size: 2rem;
+  margin-right: 2rem;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.navbarCustom__right__log:hover,
+.navbarCustom__right__token:hover {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+.navbarCustom__right__token {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.navbarCustom__right__log-logo {
+  margin-right: 0.7rem;
+}
+
+.hidden-content {
+  background-color: #32569f;
+  color: #fff;
+  position: absolute;
+  top: 7.8rem;
+  right: 13rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+.hidden-content a {
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+}
+.hide {
+  opacity: 0;
+}
+
+/* navbar */
+
+/* profile */
+
+.profile {
+  background-color: #f2f4f7;
+}
+.profile__div {
+  background-color: white;
+  border: 2px solid lighgrey;
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+.profile__div__left {
+  flex: 1;
+  /* border: 2px solid red; */
+}
+.profile__div__left__details {
+  /* background-color: red; */
+}
+.profile__div__left__header {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid lightgrey;
+}
+.profile__div__left__details {
+  margin: 2rem;
+  font-size: 2rem;
+}
+
+.profile__div__right {
+  flex: 0.5;
+}
+.profile__div__right__image {
+  height: 20rem;
+  width: 20rem;
+  border: 4px solid lightgrey;
+  border-radius: 50%;
+  object-fit: cover;
+}
+/* profile */
+
+/* footer */
+.footer {
+  background-color: #32569f;
+  color: #fff;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-around;
+  height: 5rem;
+  align-items: center;
+}
+.footer-content > a {
+  color: #fff;
+  font-size: 12px;
+}
+
+/* footer */

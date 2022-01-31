@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Front</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/e5640549ae.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/medicines.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Poppins", sans-serif;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 62.5%;
+        background-color: #f2f4f7;
+      }
+    </style>
+  <body>
+
+     <!-- nav -->
+     <nav class="navbarCustom">
+      <div class="navbarCustom__left">
+        <div class="navbarCustom__left__name">
+          <a href="./front.html">Sajilo Hospital</a>
+        </div>
+        <div class="navbarCustom__left__hospitals">
+          <a href="./allhospital.html">Hospitals</a>
+        </div>
+        <div class="navbarCustom__left__medicine">
+          <a href="./medicines.html">Medicines</a>
+        </div>
+      </div>
+      <div class="navbarCustom__right">
+        <div class="navbarCustom__right__log" id="login">
+          <i class="fas fa-sign-in-alt navbarCustom__right__log-logo"></i>LogIn
+        </div>
+        <a href="./getToken.html" class="navbarCustom__right__token"
+          >Get Token</a
+        >
+      </div>
+    </nav>
+    <div class="hidden-content hide" id="hide">
+      <a href="./doctorProfile.html" class="doctor">Doctor</a>
+      <a href="./patientProfile.html" class="patient">Patient</a>
+    </div>
+
+    <!-- nav -->
+
+    <!-- hospital section -->
+    <section class="medicines">
+      <header class="medicines__header">Medicines</header>
+      <div class="medicines__search">
+          <input type="search" class="search-input" placeholder="Search on the brand of Medicine">
+          <i class="fas fa-search search-icon"></i>
+      </div>
+      <div id="list" class="user-cards">
+        <a href="#" class="card">
+            <div class="card-button">
+                <button class="card-button-buy">Buy</button>
+            </div>
+          <div class="card-left">
+            <div>Name: <span>Paracetamol</span></div>
+            <div>Price: <span>Rs. 150</span></div>
+            <div>Location: <span>Kanti Path, Kathmandu</span></div>
+          </div>
+          <div class="card-right">
+            <div class="card-right-image-div">
+              <img
+                src="./assets/paracetamol.jpeg"
+                class="card-right-image"
+                alt="Hospital Image"
+              />
+            </div>
+          </div>
+        </a>
+        <a href="#" class="card">
+            <div class="card-button">
+                <button class="card-button-buy">Buy</button>
+            </div>
+          <div class="card-left">
+            <div>Name: <span>Paracetamol</span></div>
+            <div>Price: <span>Rs. 150</span></div>
+            <div>Location: <span>Kanti Path, Kathmandu</span></div>
+          </div>
+          <div class="card-right">
+            <div class="card-right-image-div">
+              <img
+                src="./assets/paracetamol.jpeg"
+                class="card-right-image"
+                alt="Hospital Image"
+              />
+            </div>
+          </div>
+        </a>
+        <a href="#" class="card">
+            <div class="card-button">
+                <button class="card-button-buy">Buy</button>
+            </div>
+          <div class="card-left">
+            <div>Name: <span>Paracetamol</span></div>
+            <div>Price: <span>Rs. 150</span></div>
+            <div>Location: <span>Kanti Path, Kathmandu</span></div>
+          </div>
+          <div class="card-right">
+            <div class="card-right-image-div">
+              <img
+                src="./assets/paracetamol.jpeg"
+                class="card-right-image"
+                alt="Hospital Image"
+              />
+            </div>
+          </div>
+        </a>
+        <a href="#" class="card">
+            <div class="card-button">
+                <button class="card-button-buy">Buy</button>
+            </div>
+          <div class="card-left">
+            <div>Name: <span>Paracetamol</span></div>
+            <div>Price: <span>Rs. 150</span></div>
+            <div>Location: <span>Kanti Path, Kathmandu</span></div>
+          </div>
+          <div class="card-right">
+            <div class="card-right-image-div">
+              <img
+                src="./assets/paracetamol.jpeg"
+                class="card-right-image"
+                alt="Hospital Image"
+              />
+            </div>
+          </div>
+        </a>
+        <a href="#" class="card">
+            <div class="card-button">
+                <button class="card-button-buy">Buy</button>
+            </div>
+          <div class="card-left">
+            <div>Name: <span>Paracetamol</span></div>
+            <div>Price: <span>Rs. 150</span></div>
+            <div>Location: <span>Kanti Path, Kathmandu</span></div>
+          </div>
+          <div class="card-right">
+            <div class="card-right-image-div">
+              <img
+                src="./assets/paracetamol.jpeg"
+                class="card-right-image"
+                alt="Hospital Image"
+              />
+            </div>
+          </div>
+        </a>
+        <a href="#" class="card">
+            <div class="card-button">
+                <button class="card-button-buy">Buy</button>
+            </div>
+          <div class="card-left">
+            <div>Name: <span>Paracetamol</span></div>
+            <div>Price: <span>Rs. 150</span></div>
+            <div>Location: <span>Kanti Path, Kathmandu</span></div>
+          </div>
+          <div class="card-right">
+            <div class="card-right-image-div">
+              <img
+                src="./assets/paracetamol.jpeg"
+                class="card-right-image"
+                alt="Hospital Image"
+              />
+            </div>
+          </div>
+        </a>
+        <a href="#" class="card">
+            <div class="card-button">
+                <button class="card-button-buy">Buy</button>
+            </div>
+          <div class="card-left">
+            <div>Name: <span>Paracetamol</span></div>
+            <div>Price: <span>Rs. 150</span></div>
+            <div>Location: <span>Kanti Path, Kathmandu</span></div>
+          </div>
+          <div class="card-right">
+            <div class="card-right-image-div">
+              <img
+                src="./assets/paracetamol.jpeg"
+                class="card-right-image"
+                alt="Hospital Image"
+              />
+            </div>
+          </div>
+        </a>
+        <a href="#" class="card">
+            <div class="card-button">
+                <button class="card-button-buy">Buy</button>
+            </div>
+          <div class="card-left">
+            <div>Name: <span>Paracetamol</span></div>
+            <div>Price: <span>Rs. 150</span></div>
+            <div>Location: <span>Kanti Path, Kathmandu</span></div>
+          </div>
+          <div class="card-right">
+            <div class="card-right-image-div">
+              <img
+                src="./assets/paracetamol.jpeg"
+                class="card-right-image"
+                alt="Hospital Image"
+              />
+            </div>
+          </div>
+        </a>
+        <a href="#" class="card">
+            <div class="card-button">
+                <button class="card-button-buy">Buy</button>
+            </div>
+          <div class="card-left">
+            <div>Name: <span>Paracetamol</span></div>
+            <div>Price: <span>Rs. 150</span></div>
+            <div>Location: <span>Kanti Path, Kathmandu</span></div>
+          </div>
+          <div class="card-right">
+            <div class="card-right-image-div">
+              <img
+                src="./assets/paracetamol.jpeg"
+                class="card-right-image"
+                alt="Hospital Image"
+              />
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__condition footer-content">
+        <a href="#">Condition of Use</a>
+      </div>
+      <div class="footer__privacy footer-content">
+        <a href="#">Privacy Notice</a>
+      </div>
+      <div class="footer__reserved footer-content">
+        <a href="#">All rights reserved &copy; 2022, Sajilo Hospital</a>
+      </div>
+    </footer>
+    <!-- hospital section -->
+
+    <!-- Footer -->
+
+
+    <script src="./medicines.js"></script>
+  </body>
+</html>
