@@ -1,0 +1,108 @@
+.add-patient {
+  border: 2px solid red;
+  height: 100%;
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addPatient__div {
+  border: 2px solid lightgrey;
+  display: flex;
+  width: 45%;
+  flex-direction: column;
+  padding: 1rem;
+}
+.addPatient__div__left {
+  flex: 1;
+  /* border: 2px solid blue; */
+  font-size: 1.4rem;
+}
+
+.patient__name {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.patient_namef {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.margin_right {
+  margin-right: 1rem;
+}
+.label_margin {
+  margin-bottom: 0.5rem;
+}
+.input-field {
+  width: 100%;
+  height: 4rem;
+  border-radius: 5px;
+  border: 2px solid lightgrey;
+  padding: 0 1rem;
+}
+
+.age_sex_weight {
+  display: flex;
+}
+.input-field-asw {
+  width: 40%;
+  height: 3rem;
+  padding: 0 1rem;
+  border-radius: 5px;
+  border: 2px solid lightgrey;
+}
+.margin-right {
+  margin-right: 1rem;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.margin_bottom {
+  margin-bottom: 1rem;
+}
+.addPatient__div__right {
+  flex: 1;
+  font-size: 1.4rem;
+}
+.patient_div {
+  display: flex;
+  flex-direction: column;
+}
+.general_div {
+  display: flex;
+  flex-direction: column;
+}
+.prescriptions {
+  overflow-y: scroll;
+  border-radius: 5px;
+  border: 2px solid lightgrey;
+  padding: 0.5rem 1rem;
+  height: 10rem;
+}
+.add_patient_header {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 500;
+}
+.btn-add {
+  padding: 0.3rem 1.5rem;
+  font-size: 1.8rem;
+  background-color: #32569f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.btn-add:hover {
+  box-shadow: inset 0 0 100px 100px rgba(0, 0, 0, 0.15);
+}

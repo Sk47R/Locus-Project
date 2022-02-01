@@ -45,7 +45,7 @@ body {
 .navbarCustom__left__medicine > a:hover,
 .navbarCustom__right__token:hover,
 .navbarCustom__right__log:hover {
-  filter: brightness(80%);
+  color: rgb(1, 158, 255);
 }
 
 .navbarCustom__left__hospitals > a {
@@ -76,7 +76,7 @@ body {
 
 .navbarCustom__right__log:hover,
 .navbarCustom__right__token:hover {
-  color: white;
+  color: rgb(1, 158, 255);
   text-decoration: none;
   cursor: pointer;
 }
@@ -198,13 +198,14 @@ body {
   font-size: 18px;
   padding: 0.5rem 2rem;
   cursor: pointer;
-  background-color: #32569f;
-  color: #fff;
-  border: none;
+  border: 2px solid #32569f;
+  background-color: transparent;
+  color: #32569f;
   transition: all 0.4s ease;
 }
 .card-button-buy:hover {
-  box-shadow: inset 0 0 20px 20px rgba(0, 0, 0, 0.1);
+  background-color: #32569f;
+  color: white;
 }
 
 .card {

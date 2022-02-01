@@ -34,31 +34,34 @@ body {
 
 .navbarCustom__left__name > a {
   font-size: 3rem;
-  margin-right: 2rem;
   font-family: "Dancing Script", cursive;
   cursor: pointer;
   color: #fff;
   text-decoration: none;
   transition: all 0.3s ease;
+  padding: 1rem 1.5rem;
 }
 .navbarCustom__left__name > a:hover,
 .navbarCustom__left__hospitals > a:hover,
 .navbarCustom__left__medicine > a:hover,
-.navbarCustom__right__token:hover,
+.navbarCustom__right > a:hover,
 .navbarCustom__right__log:hover {
-  filter: brightness(80%);
+  /* box-shadow: inset 0 0 40px 40px rgba(0, 0, 0, 0.15); */
+  color: rgb(1, 158, 255);
 }
 
 .navbarCustom__left__hospitals > a {
   font-size: 2rem;
-  margin-right: 2rem;
   text-decoration: none;
   color: #fff;
   transition: all 0.3s ease;
+  padding: 1rem 1.5rem;
 }
+
 .navbarCustom__left__medicine > a {
+  padding: 1rem 1.5rem;
+
   font-size: 2rem;
-  margin-right: 2rem;
   text-decoration: none;
   color: #fff;
   transition: all 0.3s ease;
@@ -73,6 +76,7 @@ body {
   text-decoration: none;
   color: #fff;
   transition: all 0.3s ease;
+  padding: 1rem 1.5rem;
 }
 
 .navbarCustom__right__log:hover,
@@ -87,6 +91,8 @@ body {
   font-size: 2rem;
   transition: all 0.3s ease;
   cursor: pointer;
+  margin-right: 2rem;
+  padding: 1rem 1.5rem;
 }
 
 .navbarCustom__right__log-logo {
@@ -166,8 +172,11 @@ body {
 }
 
 .profile__div__right {
-  flex: 0.5;
+  flex: 0.7;
   display: flex;
+
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 .profile__div__right__image {
@@ -176,6 +185,20 @@ body {
   border: 4px solid lightgrey;
   border-radius: 50%;
   object-fit: cover;
+}
+.add-patient {
+  border: 2px solid #32569f;
+  color: #32569f;
+  text-decoration: none;
+  margin-top: 3.5rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 2rem;
+  transition: all 0.4s ease;
+}
+.add-patient:hover {
+  background-color: #32569f;
+  color: white;
+  text-decoration: none;
 }
 /* profile */
 

@@ -153,7 +153,6 @@ body {
 .hospitalDetail__div__left__header {
   font-size: 3rem;
   display: flex;
-  justify-content: center;
   align-items: center;
   border-bottom: 1px solid lightgrey;
 }
@@ -197,112 +196,38 @@ body {
 }
 /* profile */
 
-/* hospital section */
-.departments,
-.doctor-section {
-  margin-top: 4rem;
-  /* background-color: white; */
+/* Section Description */
+.description {
 }
-.departments-div {
+.medicine__description {
   width: 80%;
   margin: auto;
+  margin-top: 2rem;
   background-color: white;
-  padding: 1rem 2rem;
-  height: 90rem;
-  overflow-y: scroll;
+  font-size: 1.4rem;
 }
-.doctor-div {
-  width: 80%;
-  margin: auto;
-  background-color: white;
-  padding: 1rem 2rem;
-  height: 45rem;
-  overflow-y: scroll;
+.para,
+.list li {
+  color: #666666;
 }
-.departments-div::-webkit-scrollbar,
-.doctor-div::-webkit-scrollbar {
-  width: 0; /* Remove scrollbar space */
-  /* Optional: just make scrollbar invisible */
+.para,
+.list {
+  padding: 1rem;
 }
-.departments__header,
-.doctor__header {
-  border-bottom: 1px solid rgb(222, 222, 222);
-  margin-bottom: 4rem;
+.introduction,
+.use,
+.side-effect,
+.info {
+  padding: 2rem;
+  border-bottom: 1px solid lightgrey;
 }
-
-.user-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  column-gap: 2rem;
-  row-gap: 2rem;
+.list {
+  margin-left: 2.5rem;
 }
-.user-cards > a {
-  text-decoration: none;
-  color: #3b4351;
+.header {
+  font-size: 2.5rem;
 }
-.user-cards > a:hover {
-  color: rgb(114, 113, 113);
-}
-.card {
-  padding: 0.5rem;
-  display: flex;
-  flex-direction: column-reverse;
-  /* justify-content: space-between; */
-  align-items: center;
-  border: 2px solid #f2f4f7;
-  /* padding: 1rem; */
-  transition: all 0.4s ease;
-}
-.card:hover {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.card-left {
-  flex: 1;
-  font-size: 18px;
-  margin: 2rem 0;
-  padding: 0rem 1rem;
-}
-.doctor-card-left {
-  flex: 1;
-  font-size: 18px;
-  margin: 2rem 0;
-  padding: 0rem 1rem;
-  width: 100%;
-}
-.card-right {
-  flex: 1;
-  font-size: 20px;
-}
-.departments__header,
-.doctor__header {
-  font-size: 3.3rem;
-  margin-bottom: 1rem;
-  font-weight: 600;
-}
-
-.dept__name {
-  font-size: 1.7rem;
-}
-.Dept__Name {
-  margin-bottom: 1rem;
-}
-.Doctor__Name {
-  margin-bottom: 1rem;
-}
-.Dept__Description__Header {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-}
-.Dept__Description__Content {
-  padding-left: 1.5rem;
-  font-size: 1.6rem;
-}
-
-.card-right-image {
-  width: 100%;
-  /* height: 20rem; */
-}
-/* hospital section */
+/* Section Description */
 
 /* footer */
 .footer {

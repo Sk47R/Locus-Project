@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Sajilo Hospital | Token Form</title>
+
+    <script
+      src="https://kit.fontawesome.com/e5640549ae.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./css/getToken.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Poppins", sans-serif;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 62.5%;
+        background-color: #f2f4f7;
+      }
+      body {
+        background-color: #f2f4f7;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="get-token">
+      <div class="getToken">
+        <h1 class="getToken__Header">Get Token</h1>
+        <form action="" class="form">
+          <div class="general_div">
+            <label for="name" class="general_label">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+              class="general_input"
+            />
+          </div>
+          <div class="general_div">
+            <label for="email" class="general_label">Email Address</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+              class="general_input"
+            />
+          </div>
+          <div class="general_div">
+            <label for="hospitalName" class="general_label"
+              >Hospital Name</label
+            >
+            <input
+              type="text"
+              name="hospitalName"
+              id="hospitalName"
+              placeholder="Hospital Name"
+              class="general_input"
+            />
+          </div>
+          <div class="general_div">
+            <label for="deparment" class="general_label">Department</label>
+            <select id="myselect" name="department" class="general_input">
+              <option value="birHospital">Bir Hospital</option>
+              <option value="sumeru">Sumeru</option>
+              <option value="alka">Alka</option>
+              <option value="patanHospital">Patan Hospital</option>
+            </select>
+          </div>
+          <div class="general_div">
+            <label for="amount" class="general_label">Amount</label>
+            <input
+              type="number"
+              name="amount"
+              id="amount"
+              placeholder="Amount"
+              class="general_input"
+            />
+          </div>
+          <div class="general_div">
+            <label for="accountNumber" class="general_label"
+              >Hospital's Account Number</label
+            >
+            <input
+              type="text"
+              name="accountNumber"
+              id="accountNumber"
+              placeholder="Hospital's Account Number"
+              class="general_input"
+            />
+          </div>
+          <button class="btn-token">Get Token</button>
+        </form>
+      </div>
+    </section>
+
+    <script src="./js/getToken.js"></script>
+  </body>
+</html>

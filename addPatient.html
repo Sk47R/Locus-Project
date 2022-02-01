@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Sajilo Hospital | Add Patient</title>
+
+    <script
+      src="https://kit.fontawesome.com/e5640549ae.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./css/addPatient.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Poppins", sans-serif;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 62.5%;
+        background-color: #f2f4f7;
+      }
+      body {
+        background-color: #f2f4f7;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="add-patient">
+      <form action="" class="form">
+        <div class="addPatient__div">
+          <h1 class="add_patient_header">Add Patient Form</h1>
+          <div class="addPatient__div__left">
+            <div class="patient__name margin_bottom">
+              <div class="patient_namef margin_right">
+                <label for="firstname" class="label_margin"> First Name</label>
+                <input
+                  type="text"
+                  name="firstname"
+                  id="firstname"
+                  placeholder="First Name"
+                  class="input-field"
+                />
+              </div>
+              <div class="patient_namef">
+                <label for="lastname" class="label_margin"> Last Name</label>
+                <input
+                  type="text"
+                  name="lastname"
+                  id="lastname"
+                  placeholder="Last Name"
+                  class="input-field"
+                />
+              </div>
+            </div>
+            <div class="age_sex_weight margin_bottom">
+              <div class="age">
+                <label for="age" class="margin-right">Age</label>
+                <input
+                  type="number"
+                  name="age"
+                  id="age"
+                  class="input-field-asw"
+                />
+              </div>
+              <div class="sex">
+                <label for="sex" class="margin-right">Sex</label>
+                <input
+                  type="text"
+                  name="sex"
+                  id="sex"
+                  class="input-field-asw"
+                />
+              </div>
+              <div class="weight">
+                <label for="weight" class="margin-right">Weight</label>
+                <input
+                  type="number"
+                  name="weight"
+                  id="weight"
+                  class="input-field-asw"
+                />
+              </div>
+            </div>
+            <div class="patient_div margin_bottom">
+              <label for="phonenumber" class="label_margin">Phone Number</label>
+              <input
+                type="text"
+                name="phonenumber"
+                placeholder="Phone Number"
+                class="input-field"
+              />
+            </div>
+            <div class="patient_div margin_bottom">
+              <label for="address" class="label_margin">Address</label>
+              <input
+                type="text"
+                name="address"
+                placeholder="Address"
+                class="input-field"
+              />
+            </div>
+            <div class="patient_div margin_bottom">
+              <label for="imageUrl" class="label_margin">Image Url</label>
+              <input
+                type="text"
+                name="imageUrl"
+                placeholder="Patient Image Url"
+                class="input-field"
+              />
+            </div>
+            <div class="patient_div margin_bottom">
+              <label for="email" class="label_margin">Email Address</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                class="input-field"
+              />
+            </div>
+          </div>
+          <div class="addPatient__div__right">
+            <div class="patient__name margin_bottom">
+              <div class="patient_namef margin_right">
+                <label for="hospitalname" class="label_margin">
+                  Hospital Name</label
+                >
+                <input
+                  type="text"
+                  name="hospitalname"
+                  id="firstname"
+                  placeholder="Hospital Name"
+                  class="input-field"
+                />
+              </div>
+              <div class="patient_namef">
+                <label for="doctorname" class="label_margin">
+                  Doctor Name</label
+                >
+                <input
+                  type="text"
+                  name="doctorname"
+                  id="doctorname"
+                  placeholder="Doctor Name"
+                  class="input-field"
+                />
+              </div>
+            </div>
+            <div class="general_div margin_bottom">
+              <label for="date" class="label_margin">Examined Date</label>
+              <input
+                type="date"
+                name="date"
+                id="date"
+                placeholder="Examined Date"
+                class="input-field"
+              />
+            </div>
+            <div class="general_div margin_bottom">
+              <label for="symptoms" class="label_margin">Symptoms</label>
+              <input
+                type="text"
+                name="symptoms"
+                id="symptoms"
+                placeholder="Symptoms"
+                class="input-field"
+              />
+            </div>
+            <div class="general_div margin_bottom">
+              <label for="doctorPrediction" class="label_margin"
+                >Doctor's Prediction</label
+              >
+              <input
+                type="text"
+                name="doctorPrediction"
+                id="doctorPrediction"
+                placeholder="Doctor Prediction"
+                class="input-field"
+              />
+            </div>
+            <div class="general_div margin_bottom">
+              <label for="prescriptions" class="label_margin"
+                >Doctor's Prescriptions</label
+              >
+              <textarea
+                name="prescriptions"
+                id="prescriptions"
+                class="prescriptions"
+              ></textarea>
+            </div>
+          </div>
+          <button class="btn-add">Add</button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>

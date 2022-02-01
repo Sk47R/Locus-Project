@@ -46,7 +46,7 @@ body {
 .navbarCustom__left__medicine > a:hover,
 .navbarCustom__right__token:hover,
 .navbarCustom__right__log:hover {
-  filter: brightness(80%);
+  color: rgb(1, 158, 255);
 }
 
 .navbarCustom__left__hospitals > a {
@@ -77,7 +77,7 @@ body {
 
 .navbarCustom__right__log:hover,
 .navbarCustom__right__token:hover {
-  color: white;
+  color: rgb(1, 158, 255);
   text-decoration: none;
   cursor: pointer;
 }

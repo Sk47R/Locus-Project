@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Sajilo Hospital | Medicine Details</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/e5640549ae.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/medicineDetial.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Poppins", sans-serif;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 62.5%;
+        background-color: #f2f4f7;
+      }
+      body {
+        background-color: #f2f4f7;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- nav -->
+    <nav class="navbarCustom">
+      <div class="navbarCustom__left">
+        <div class="navbarCustom__left__name">
+          <a href="./front.html">Sajilo Hospital</a>
+        </div>
+        <div class="navbarCustom__left__hospitals">
+          <a href="./allhospital.html">Hospitals</a>
+        </div>
+        <div class="navbarCustom__left__medicine">
+          <a href="./medicines.html">Medicines</a>
+        </div>
+      </div>
+      <div class="navbarCustom__right">
+        <div class="navbarCustom__right__log" id="register">Register</div>
+        <div class="navbarCustom__right__log" id="login">
+          <i class="fas fa-sign-in-alt navbarCustom__right__log-logo"></i>LogIn
+        </div>
+        <a href="./getToken.html" class="navbarCustom__right__token"
+          >Get Token</a
+        >
+      </div>
+    </nav>
+    <div class="hidden-content hide" id="hide">
+      <a href="./signinDoctor.html" class="doctor">Doctor</a>
+      <a href="./signinPatient.html" class="patient">Patient</a>
+    </div>
+    <div class="hidden-content-register hide-register" id="hide-register">
+      <a href="./registerDoctor.html" class="doctor">Doctor</a>
+      <a href="./registerPatient.html" class="patient">Patient</a>
+    </div>
+
+    <!-- nav -->
+
+    <!-- Section Hospital Detail -->
+    <section class="hospitalDetail">
+      <div class="hospitalDetail__div">
+        <div class="hospitalDetail__div__left">
+          <div class="hospitalDetail__div__left__details">
+            <div class="hospitalDetail__div__left__header">
+              <p>Paracetamol</p>
+            </div>
+            <div class="hospitalDetail__div__left__details">
+              <div class="hospitalDetail__div__left__info">
+                Manufacturer: <span class="margin-right">Bir Hospital</span>
+              </div>
+              <div class="hospitalDetail__div__left__info">
+                Salt Composition:
+                <span class="margin-right">Paracetamol (650mg)</span>
+              </div>
+              <div class="hospitalDetail__div__left__info">
+                Salt Synonyms: <span>Acetaminophen </span>
+              </div>
+              <div class="hospitalDetail__div__left__info">
+                Storage:
+                <span class="margin__right">Store below 30°C</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hospitalDetail__div__right">
+          <img
+            src="./assets/ani.jpeg"
+            alt="Hospital Image"
+            class="hospitalDetail__div__right__image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Hospital detail -->
+
+    <!-- section Description -->
+    <section class="description">
+      <div class="medicine__description">
+        <div class="introduction">
+          <h2 class="header">Introduction</h2>
+          <p class="para">
+            Dolopar 650 Tablet helps relieve pain and fever by blocking the
+            release of certain chemical messengers responsible for fever and
+            pain. It is used to treat headaches, migraine, nerve pain,
+            toothache, sore throat, period (menstrual) pains, arthritis, muscle
+            aches, and the common cold. Dolopar 650 Tablet may be prescribed
+            alone or in combination with another medicine. You should take it
+            regularly as advised by your doctor. It is usually best taken with
+            food otherwise it may upset your stomach. Do not take more or use it
+            for longer than recommended. Side effects are rare if this medicine
+            is used correctly but this medicine may cause stomach pain, nausea,
+            and vomiting in some people. Consult your doctor if any of these
+            side effects bother you or do not go away. This medicine is widely
+            prescribed and considered safe but is not suitable for everybody.
+            Before taking it, let your doctor know if you have liver or kidney
+            problems or are using blood-thinning medicines. It may affect the
+            dose or suitability of this medicine. Let your doctor know about all
+            the other medicines you are taking because they may affect, or be
+            affected by, this medicine.
+          </p>
+        </div>
+        <div class="use">
+          <h2 class="header">Use of <span>Paracetamol</span></h2>
+          <ul class="list">
+            <li>Pain Relief</li>
+            <li>Treatment of Fever</li>
+          </ul>
+        </div>
+        <div class="side-effect">
+          <h2 class="header">Side Effect of <span>Paracetamol</span></h2>
+          <ul class="list">
+            <li>Stomach Pain</li>
+            <li>Nausea</li>
+            <li>Vomiting</li>
+          </ul>
+        </div>
+        <div class="info">
+          <h2 class="header">How to use <span>Paracetamol</span> tablets</h2>
+          <p class="para">
+            Take this medicine in the dose and duration as advised by your
+            doctor. Swallow it as a whole. Do not chew, crush or break it.
+            Dolopar 650 Tablet is to be taken with food.
+          </p>
+        </div>
+        <div class="info">
+          <h2 class="header">How <span>Paracetamol</span> tablets work</h2>
+          <p class="para">
+            Dolopar 650 Tablet is an analgesic (pain reliever) and anti-pyretic
+            (fever reducer). It works by blocking the release of certain
+            chemical messengers that cause pain and fever.
+          </p>
+        </div>
+        <div class="info">
+          <h2 class="header">Saftey Advice</h2>
+          <ul class="list">
+            <li>No consuming alcohol.</li>
+            <li>
+              Dolopar 650 Tablet may be unsafe to use during pregnancy. Although
+              there are limited studies in humans, animal studies have shown
+              harmful effects on the developing baby. Your doctor will weigh the
+              benefits and any potential risks before prescribing it to you.
+              Please consult your doctor.
+            </li>
+            <li>
+              Dolopar 650 Tablet is safe to use during breastfeeding. Human
+              studies suggest that the drug does not pass into the breastmilk in
+              a significant amount and is not harmful to the baby.
+            </li>
+            <li>
+              Dolopar 650 Tablet does not usually affect your ability to drive.
+            </li>
+          </ul>
+        </div>
+        <div class="info">
+          <h2 class="header">
+            What If You Forget To Take <span>Paracetamol</span> Tablet?
+          </h2>
+          <p class="para">
+            If you miss a dose of Dolopar 650 Tablet, take it as soon as
+            possible. However, if it is almost time for your next dose, skip the
+            missed dose and go back to your regular schedule. Do not double the
+            dose.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Description -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__condition footer-content">
+        <a href="#">Condition of Use</a>
+      </div>
+      <div class="footer__privacy footer-content">
+        <a href="#">Privacy Notice</a>
+      </div>
+      <div class="footer__reserved footer-content">
+        <a href="#">All rights reserved &copy; 2022, Sajilo Hospital</a>
+      </div>
+    </footer>
+
+    <!-- Footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./js/hospitalDetail.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
