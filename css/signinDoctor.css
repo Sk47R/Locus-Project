@@ -15,7 +15,10 @@
 .header > h2 {
   font-size: 3rem;
   font-weight: 500;
-  margin-bottom: 1.3rem;
+  margin-bottom: 2rem;
+  line-height: 4rem;
+  border-bottom: 4px solid #32569f;
+  display: inline-block;
 }
 .signin__input {
   margin-bottom: 1.5rem;
